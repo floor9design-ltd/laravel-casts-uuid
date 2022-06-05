@@ -1,0 +1,23 @@
+# .gitignore
+#
+# Ignored files for git
+#
+# @category  None
+# @package   \
+# @author    Rick Morice <rick@floor9design.com>
+# @copyright Floor9design Ltd
+# @license   MIT
+# @link      https://github.com/floor9design-ltd/laravel-casts-uuid
+# @version   0.1
+# @since     0.1
+
+# IDE
+.idea
+
+# Vendor
+vendor
+
+# Testing
+docs/tests/*
+docs/phpdoc/*
+/.phpunit.result.cache
