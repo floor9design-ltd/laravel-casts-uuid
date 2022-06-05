@@ -1,7 +1,7 @@
 # laravel-casts-uuid
 
 [![Latest Version](https://img.shields.io/github/v/release/floor9design-ltd/laravel-casts-uuid?include_prereleases&style=plastic)](https://github.com/floor9design-ltd/laravel-casts-uuid)
-[![Software License](https://img.shields.io/badge/licence-proprietary-blue?style=plastic)](LICENCE.md)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=plastic)](LICENCE.md)
 
 [![Build Status](https://travis-ci.com/floor9design-ltd/laravel-casts-uuid.svg?token=x4MFxdDxakjaUk28JSuL)](https://travis-ci.com/github/floor9design-ltd/laravel-casts-uuid)
 [![Build Status](https://img.shields.io/codecov/c/github/floor9design-ltd/laravel-casts-uuid?style=plastic)](https://codecov.io/gh/floor9design-ltd/laravel-casts-uuid)
