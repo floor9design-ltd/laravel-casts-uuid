@@ -12,7 +12,7 @@
  * @copyright Floor9design Ltd
  * @license   MIT
  * @link      https://github.com/floor9design-ltd/laravel-casts-uuid
- * @version   0.1
+ * @version   1.0
  * @since     0.1
  */
 
@@ -35,7 +35,7 @@ use Ramsey\Uuid\UuidInterface;
  * @copyright Floor9design Ltd
  * @license   MIT
  * @link      https://github.com/floor9design-ltd/laravel-casts-uuid
- * @version   0.1
+ * @version   1.0
  * @since     0.1
  */
 class Uuid implements CastsAttributes
