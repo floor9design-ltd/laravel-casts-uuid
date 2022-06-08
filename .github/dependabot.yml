@@ -1,0 +1,18 @@
+# .dependabot.yml
+#
+# Setup for dependabot on github
+#
+# @category  None
+# @package   \
+# @author    Rick Morice <rick@floor9design.com>
+# @copyright Floor9design Ltd
+# @license   MIT
+# @link      https://github.com/floor9design-ltd/laravel-casts-uuid
+# @version   1.0
+# @since     0.1
+version: 2
+updates:
+  - package-ecosystem: composer
+    directory: /
+    schedule:
+      interval: daily
