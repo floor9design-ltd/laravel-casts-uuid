@@ -17,7 +17,7 @@ Add the following to the `composer.json`:
 
 ```jsonlines
     "require": {
-        "floor9design-ltd/laravel-casts-uuid": "dev-master",
+        "floor9design/laravel-casts-uuid": "^1.0",
     }
 ```
 
