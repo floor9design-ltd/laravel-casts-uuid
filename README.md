@@ -6,6 +6,10 @@
 [![Build Status](https://travis-ci.com/floor9design-ltd/laravel-casts-uuid.svg?token=x4MFxdDxakjaUk28JSuL)](https://travis-ci.com/github/floor9design-ltd/laravel-casts-uuid)
 [![Build Status](https://img.shields.io/codecov/c/github/floor9design-ltd/laravel-casts-uuid?style=plastic)](https://codecov.io/gh/floor9design-ltd/laravel-casts-uuid)
 
+[![Github Downloads](https://img.shields.io/github/downloads/floor9design-ltd/laravel-casts-uuid/total?style=plastic)](https://github.com/floor9design-ltd/laravel-casts-uuid)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/floor9design/laravel-casts-uuid?style=plastic)](https://packagist.org/packages/floor9design/laravel-casts-uuid)
+
+
 ## Introduction
 
 The Laravel Framework supports casting of types within models. This class adds the `ramsey/uuid` UUID class support 
