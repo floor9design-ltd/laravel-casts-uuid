@@ -40,7 +40,8 @@ protected $casts = [
 
 ```
 
-Note the alias - often it is useful to alias the casting class as it can clash with:
+Note the alias - often it is useful to alias the casting class as it can clash with other Uuid classes, such as the 
+base Uuid class:
 
 ```php
 use Ramsey\Uuid\Uuid;
