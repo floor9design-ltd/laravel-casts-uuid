@@ -46,7 +46,7 @@ class UuidTest extends TestCase
      *
      * @return void
      */
-    public function testGet()
+    public function testGet():void
     {
         $uuid = new UuidCasts();
         $model = $this->createUuidModel();
@@ -64,7 +64,7 @@ class UuidTest extends TestCase
      *
      * @return void
      */
-    public function testSet()
+    public function testSet():void
     {
         $model = $this->createUuidModel();
         $uuid = RamseyUuid::uuid4();
@@ -77,7 +77,21 @@ class UuidTest extends TestCase
         $model->uuid = 'a string';
     }
 
-    private function createUuidModel()
+    /**
+     * @return void
+     */
+    public function testSerialize():void
+    {
+        $model = $this->createUuidModel();
+        $uuid = RamseyUuid::uuid4();
+
+        $model->uuid = $uuid;
+
+        $serialised = $model->jsonSerialize();
+        $this->assertEquals($uuid->toString(), $serialised['uuid']);
+    }
+
+    private function createUuidModel(): Model
     {
         return new class extends Model {
             protected $casts = [

@@ -20,6 +20,7 @@ namespace Floor9design\LaravelCasts;
 
 use Exception;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
+use Illuminate\Contracts\Database\Eloquent\SerializesCastableAttributes;
 use Illuminate\Database\Eloquent\Model;
 use Ramsey\Uuid\Uuid as RamseyUuid;
 use Ramsey\Uuid\UuidInterface;
@@ -38,7 +39,7 @@ use Ramsey\Uuid\UuidInterface;
  * @version   1.0
  * @since     0.1
  */
-class Uuid implements CastsAttributes
+class Uuid implements CastsAttributes, SerializesCastableAttributes
 {
     /**
      * Cast the given value.
@@ -72,5 +73,19 @@ class Uuid implements CastsAttributes
         }
 
         return $value->getBytes();
+    }
+
+    /**
+     * Get the serialized representation of the value.
+     *
+     * @param Model $model
+     * @param  string  $key
+     * @param  mixed  $value
+     * @param  array  $attributes
+     * @return string
+     */
+    public function serialize($model, string $key, $value, array $attributes): string
+    {
+        return (string) $value;
     }
 }
