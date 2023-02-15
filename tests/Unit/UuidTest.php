@@ -12,7 +12,7 @@
  * @copyright Floor9design Ltd
  * @license   MIT
  * @link      https://github.com/floor9design-ltd/laravel-casts-uuid
- * @version   1.0
+ * @version   1.1
  * @since     0.1
  */
 
@@ -36,7 +36,7 @@ use Ramsey\Uuid\UuidInterface;
  * @copyright Floor9design Ltd
  * @license   MIT
  * @link      https://github.com/floor9design-ltd/laravel-casts-uuid
- * @version   1.0
+ * @version   1.1
  * @since     0.1
  */
 class UuidTest extends TestCase
@@ -73,7 +73,7 @@ class UuidTest extends TestCase
         $this->assertInstanceOf(UuidInterface::class, $model->uuid, 'Class was not the expected type');
 
         $this->expectException(Exception::class);
-        $this->expectExceptionMessage('The uuid property is not an instance of Ramsey - Uuid');
+        $this->expectExceptionMessage('The uuid property is not an instance of Ramsey - UuidInterface');
         $model->uuid = 'a string';
     }
 

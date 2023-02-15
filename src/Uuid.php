@@ -12,7 +12,7 @@
  * @copyright Floor9design Ltd
  * @license   MIT
  * @link      https://github.com/floor9design-ltd/laravel-casts-uuid
- * @version   1.0
+ * @version   1.1
  * @since     0.1
  */
 
@@ -36,8 +36,9 @@ use Ramsey\Uuid\UuidInterface;
  * @copyright Floor9design Ltd
  * @license   MIT
  * @link      https://github.com/floor9design-ltd/laravel-casts-uuid
- * @version   1.0
+ * @version   1.1
  * @since     0.1
+ *
  */
 class Uuid implements CastsAttributes, SerializesCastableAttributes
 {
@@ -48,9 +49,9 @@ class Uuid implements CastsAttributes, SerializesCastableAttributes
      * @param string $key
      * @param string $value
      * @param array<mixed> $attributes
-     * @return UuidInterface $uuid
+     * @return UuidInterface|null
      */
-    public function get($model, string $key, $value, array $attributes)
+    public function get(Model $model, string $key, mixed $value, array $attributes)
     {
         $uuid = RamseyUuid::fromBytes($value);
         return $uuid;
@@ -66,10 +67,10 @@ class Uuid implements CastsAttributes, SerializesCastableAttributes
      * @return string
      * @throws Exception
      */
-    public function set($model, string $key, $value, array $attributes)
+    public function set(Model $model, string $key, $value, array $attributes)
     {
         if (!$value instanceof (UuidInterface::class)) {
-            throw new Exception('The uuid property is not an instance of Ramsey - Uuid');
+            throw new Exception('The uuid property is not an instance of Ramsey - UuidInterface');
         }
 
         return $value->getBytes();
@@ -81,11 +82,11 @@ class Uuid implements CastsAttributes, SerializesCastableAttributes
      * @param Model $model
      * @param  string  $key
      * @param  mixed  $value
-     * @param  array  $attributes
-     * @return string
+     * @param  array<mixed>  $attributes
+     * @return mixed
      */
-    public function serialize($model, string $key, $value, array $attributes): string
+    public function serialize(Model $model, string $key, $value, array $attributes)
     {
-        return (string) $value;
+        return $value;
     }
 }

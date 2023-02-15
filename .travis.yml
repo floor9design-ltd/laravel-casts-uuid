@@ -8,7 +8,7 @@
 # @copyright Floor9design Ltd
 # @license   MIT
 # @link      https://github.com/floor9design-ltd/laravel-casts-uuid
-# @version   1.0
+# @version   1.11
 # @since     0.1
 os: linux
 language: php

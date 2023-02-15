@@ -8,9 +8,9 @@
 # @copyright Floor9design Ltd
 # @license   MIT
 # @link      https://github.com/floor9design-ltd/laravel-casts-uuid
-# @version   1.0
+# @version   1.1
 # @since     0.1
 parameters:
-    level: max
+    level: 5
     paths:
         - src
