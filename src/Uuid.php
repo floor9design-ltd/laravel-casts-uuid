@@ -39,6 +39,8 @@ use Ramsey\Uuid\UuidInterface;
  * @version   1.1
  * @since     0.1
  *
+ * @implements CastsAttributes<Uuid, UuidInterface>
+ *
  */
 class Uuid implements CastsAttributes, SerializesCastableAttributes
 {
